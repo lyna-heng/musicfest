@@ -19,7 +19,7 @@ const router = createBrowserRouter([
         element: <StagePage />,
       },
       {
-        path: "stageId",
+        path: "{/${stage.id}}",
         element: < StagePage />,
       }
     ],

@@ -19,8 +19,7 @@ export default function StagePage() {
                 <h2>Stage not found</h2>
                 <h3>Other performances</h3>
                 <ul>
-                    <StageList stages={stages} />
-                    {StageList}
+                    <StageList stages={[stages]} />
                 </ul>
                 </div>
         )
@@ -35,8 +34,7 @@ export default function StagePage() {
 
             <h3>Other performances</h3>
             <ul>
-                <StageList stages={stages} />
-                {StageList}
+                <StageList stages={[stages]} />
             </ul>
         </div>
     )
