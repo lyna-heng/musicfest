@@ -1,5 +1,7 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Layout from './Layout';
+
+//Pages
 import Home from './views/Home';
 import StagePage from './views/StagePage';
 
@@ -15,6 +17,10 @@ const router = createBrowserRouter([
       {
         path: "stages",
         element: <StagePage />,
+      },
+      {
+        path: "stageId",
+        element: < StagePage />,
       }
     ],
   },
