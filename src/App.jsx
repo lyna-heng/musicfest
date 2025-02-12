@@ -4,6 +4,7 @@ import Layout from './Layout';
 //Pages
 import Home from './views/Home';
 import StagePage from './views/StagePage';
+import NotFound from './views/NotFound';
 
 const router = createBrowserRouter([
   {
@@ -17,14 +18,17 @@ const router = createBrowserRouter([
       {
         path: "stages",
         element: <StagePage />,
+        errorElement: <NotFound />
       },
       {
-        path: "stages/:stageId",
+        path: "stages/performance/:stageId",
         element: < StagePage />,
+        errorElement: <NotFound />
       },
       {
         path: "stages/:stageCategory",
         element: < StagePage />,
+        errorElement: <NotFound />
       },
 
     ],

@@ -7,7 +7,7 @@ export default function StageList({stages}) {
         <>
             {stages.map((stage) => (
                 <li key={stage.id}>
-                    <Link to={`/musicfest/stages/${stage.id}`}> {stage.name} </Link>
+                    <Link to={`/musicfest/stages/performance/${stage.id}`}> {stage.name} </Link>
                 </li>
             ))}
         </>
@@ -17,19 +17,3 @@ export default function StageList({stages}) {
 StageList.propTypes = {
     stages: PropTypes.arrayOf(stagePropTypes).isRequired,
 };
-
-
-
-
-
-/* export default function StageList(stages) {
-    return (
-        <>
-            {stages.map((stage) => (
-                <li key={stage.id}>
-                    <Link to=":stageId"> {stage.name} </Link>
-                </li>
-            ))}
-        </>
-    )
-} */

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export default function Header() {
+export default function Header({setStageCategory}) {
 
     return (
             <header>
@@ -13,13 +13,13 @@ export default function Header() {
                     <Link to={"stages"}>Stages</Link>
                 </li>
                 <li>
-                    <Link to={"stages/:stageCategory"}>Main Stage</Link>
+                    <Link to={"stages/Main Stage"} onClick={()=> setStageCategory('Main Stage')}>Main Stage</Link>
                 </li>
                 <li>
-                    <Link to={"stages/:stageCategory"}>Accoustic Stage</Link>
+                    <Link to={"stages/Accoustic Stage"} onClick={()=> setStageCategory('Accoustic Stage')}>Accoustic Stage</Link>
                 </li>
                 <li>
-                    <Link to={"stages/:stageCategory"}>EDM Stage</Link>
+                    <Link to={"stages/EDM Stage"} onClick={()=> setStageCategory('EDM Stage')}>EDM Stage</Link>
                 </li>
             </ul>
         </nav>
