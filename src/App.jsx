@@ -19,9 +19,14 @@ const router = createBrowserRouter([
         element: <StagePage />,
       },
       {
-        path: "{/${stage.id}}",
+        path: "stages/:stageId",
         element: < StagePage />,
-      }
+      },
+      {
+        path: "stages/:stageCategory",
+        element: < StagePage />,
+      },
+
     ],
   },
 ]);

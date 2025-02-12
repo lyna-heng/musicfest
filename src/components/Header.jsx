@@ -12,6 +12,15 @@ export default function Header() {
                 <li>
                     <Link to={"stages"}>Stages</Link>
                 </li>
+                <li>
+                    <Link to={"stages/:stageCategory"}>Main Stage</Link>
+                </li>
+                <li>
+                    <Link to={"stages/:stageCategory"}>Accoustic Stage</Link>
+                </li>
+                <li>
+                    <Link to={"stages/:stageCategory"}>EDM Stage</Link>
+                </li>
             </ul>
         </nav>
     </header>
