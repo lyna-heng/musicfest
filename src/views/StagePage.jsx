@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import StageList from "./StageList";
 import PerformanceDetails from "../components/PerformanceDetails";
+import SearchFilter from "../components/SearchFilter";
 
 export default function StagePage() {
 
@@ -70,6 +71,12 @@ export default function StagePage() {
                         </li>
                     ))}
                 </ul>
+                <div>
+                    <h2>All Performances</h2>
+                    <ul>
+                        <StageList stages={stages} />
+                    </ul>
+                    </div>
             </div>
         );
     }
@@ -78,6 +85,7 @@ export default function StagePage() {
     return (
         <div>
             <h2>All Performances</h2>
+            <SearchFilter items={stages} />
             <ul>
                 <StageList stages={stages} />
             </ul>
